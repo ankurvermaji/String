@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 // Reverse a String 
 public class Test2 {
 
@@ -16,6 +18,27 @@ public class Test2 {
 			nstr=ch+nstr;
 		}
 		System.out.println("resever string "+nstr);
+	
+	
+	//----------------
+	
+	String s="My Name Ankur Verma";
+	
+	Stack<Character> stack =new Stack<Character>();
+	
+	for(char c:s.toCharArray())
+	{
+		stack.push(c);
+		
 	}
 	
+	String tmp ="";
+	
+	while(!stack.isEmpty())
+	{
+		tmp =tmp+stack.pop();
+	}
+	System.out.print(" resver String"+tmp);
 }
+}
+
